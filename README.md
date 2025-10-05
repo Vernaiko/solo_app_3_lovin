@@ -1,16 +1,12 @@
-# untitled
+# Solo App #3 - Lovin
 
-A new Flutter project.
+The following is a basic flutter app that renders a Pokemon from PokeAPI (any pokemon from gen 1). To run it, simply go to the 
+command line, and type
 
-## Getting Started
+```flutter pub get```
+followed by
+```flutter run```
 
-This project is a starting point for a Flutter application.
+IMPORTANT: This is best run in Google Chrome, though it does work on the IOS simulator as well. This has more to do with PokeAPI liking chrome.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+As a user, you should be able to enter in a dex number for a Pokemon (1-151), and it will display their sprite, name, and dex number on the next page. Additional searches may be conducted, as desired. One edge case the app handles is using dex numbers over 151, since there are . . . well a LOT more Pokemon than the original 151. Due to this, it's important that the user can't enter in numbers higher than 151, since the API only supports gen 1 Pokemon.
